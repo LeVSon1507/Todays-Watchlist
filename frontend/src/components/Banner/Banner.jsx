@@ -3,12 +3,14 @@ import useFetch from '../../customHooks/useFetch';
 import { requests } from '../../requestsApi';
 import './Banner.css';
 
-function Banner({apiEndpoint,genre}) {
-   const { results, isLoading } = useFetch(apiEndpoint,`page=1&genre=28`,'GET');
+function Banner({ apiEndpoint }) {
+   const { results, isLoading } = useFetch(apiEndpoint, `page=1&genre=28`, 'GET');
+
    // Kiểm tra xem đối tượng results có chứa dữ liệu hay không
    if (!results || !results.results || results.results.length === 0) {
-      return null;
+      return;
    }
+
    // Lấy ngẫu nhiên một phim từ danh sách các phim trả về
    const randomMovie = results.results[Math.floor(Math.random() * results.results.length)];
 
