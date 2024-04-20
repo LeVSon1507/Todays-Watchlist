@@ -1,0 +1,57 @@
+.movieList {
+   background-color: black;
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+.movieItem {
+   margin-bottom: 3rem;
+   margin-left: 1rem;
+}
+.movieImgPoster {
+   width: 150px;
+   height: 230px;
+   object-fit: cover;
+   transition: transform 0.2s ease-out;
+}
+.movieImgBackDrop {
+   width: 10rem;
+   height: 7rem;
+   object-fit: cover;
+   transition: transform 0.2s ease-out;
+}
+
+.movieImgBackDrop:hover,
+.movieImgPoster:hover {
+   transform: scale(1.2);
+}
+
+
+.btn-page {
+   display: inline-block;
+   font-size: 1rem;
+   font-weight: 600;
+   color: #fff;
+   background-color: #e50914;
+   padding: 0.75rem 1.5rem;
+   border-radius: 0.25rem;
+   border: none;
+   text-transform: uppercase;
+   cursor: pointer;
+   transition: all 0.2s ease-in-out;
+ }
+ 
+ .btn-page:hover {
+   background-color: #b80000;
+   transform: translateY(-2px);
+ }
+ 
+ .btn-next-prev{
+   position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  padding-top: 0;
+ }
