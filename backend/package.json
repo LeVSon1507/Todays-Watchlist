@@ -1,5 +1,6 @@
 {
    "name": "assignment1",
+   "type": "module",
    "version": "1.0.0",
    "description": "project1",
    "main": "app.ts",
